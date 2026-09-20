@@ -12,52 +12,53 @@ redirect_from:
 
 # Welcome!
 
-<!-- TODO: 换成你的自我介绍。下面这句是句式参考。 -->
-I am [YOUR NAME], a [Ph.D. student / Master student] at [School], [University]. I'm fortunate to be advised by [Prof. XXX](https://example.com). I received B.S. in [Major], [University], in [Year].
+I am Kun Zhang, an incoming Ph.D. student at the School of Integrated Circuits, Peking University. I'm fortunate to be advised by [Prof. Yaoyu Tao](https://taoyaoyu.me/). I am expected to receive my B.S. in Integrated Circuit Design and Integrated Systems from Peking University in 2027.
 
 My research interests focus on
 
-- [研究方向一，例如：In-Memory-Computing (IMC) chip design.]
-- [研究方向二，例如：Heterogeneous Architecture.]
+- VLSI Design
+- Computer Architecture
 
 # Educations
 
-<!-- TODO: 从最近往早写。*斜体* 的日期会显示成灰色小字。 -->
-- *2024.09 - Present*, Ph.D. Student at [School], [University]
-- *2020.09 - 2024.06*, B.S. at [Department], [University]. **Rank: X/X, Excellent Graduate**
+- *2027.09 - Present*, Incoming Ph.D. Student at School of Integrated Circuits, Peking University
+- *2023.09 - 2027.06*, B.S. at School of Integrated Circuits, Peking University
 
 # Honors and Awards
 
-<!-- TODO: 没有的奖项删掉，不要留空条目。 -->
-- *2025* [奖项名称]
-- *2024* [奖项名称]
+- *2025* Merit Student of Peking University
+- *2025* Canon Scholarship
 
 # News
 
-<!-- TODO: 最新的一条放最上面，日期格式 YYYY.MM。每条尽量一句话。
-     行首的 emoji 是个人风格，可自行替换：
-     📄 论文录用/发表   🎤 报告   🔥 获奖/里程碑   🧠 重要成果
-     冒号后的 &nbsp; 是排版用的空一格，别删。 -->
-- *2026.01*: &nbsp;📄 Our paper was accepted at [会议/期刊名]!🔗 [Read more](https://example.com)
-- *2025.12*: &nbsp;🎤 Gave an oral presentation at [会议名] 2025!
-- *2025.09*: &nbsp;🔥 [获奖或里程碑事件]
+<!-- 最新的一条放最上面，日期格式 YYYY.MM。行首 emoji 可自选：📄 论文 🎤 报告 🔥 获奖/里程碑 🧠 重要成果 -->
+- *2026.07*: &nbsp;🔥 Awarded Outstanding Camper of the Peking University Integrated Circuits Summer Camp.
+
+<!-- ==========================================================
+     论文区（暂未启用，因为目前还没有论文）
+
+     以后有论文了怎么启用：
+       1. 去掉这一整段的注释包裹（就是本行开头这串符号，和末尾最后一行的收尾符号）
+       2. 去 _data/navigation.yml 把 "Main Publications" 和
+          "Collaborative Publications" 两个导航项加回来
+
+     下面保留了 higgsbose 同款的两种写法，到时照抄改内容即可。
 
 # Main Publications
 
 ## Conference Papers
 
-<!-- TODO: 下面是一张论文卡片的完整模板，照抄后替换方括号里的内容即可。
-     · badge          = 右上角角标，填会议简称缩写，如 IEDM'25
-     · img src        = 论文配图，放进 images/ 后填路径；暂时没有就删掉整个 <img> 那行
-     · paper-box-image 上的 style 可调图片宽度，不写则用默认宽度
-     · 方括号 [ ] 里的标题如果加了链接，读者就能点进去
-     · 作者列表里自己的名字用 <strong> 加粗，<sup>#</sup> 表示共同一作，^ 表示通讯作者 -->
+卡片各字段：
+  badge     右上角会议角标，填简称，如 IEDM'25
+  img src   论文配图，放进 images/ 后填路径；没有配图就删掉整行 img
+  作者列表  自己的名字用 strong 标签加粗，sup 包 # 表示共同一作，^ 表示通讯作者
+
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">CONF'26</div><img src="images/placeholder.png" alt="sym" width="100%" /></div></div>
 <div class="paper-box-text">
 
     <p><strong>[CONF'26]</strong><a href="https://example.com">[论文标题]</a></p>
 
-    <p>[作者1]<sup>#</sup>, [作者2], <strong>[YOUR NAME]<sup>#</sup></strong>, [作者3]^ <strong>(<sup>#</sup>Equally Contributed)</strong></p>
+    <p>[作者1]<sup>#</sup>, [作者2], <strong>Kun Zhang<sup>#</sup></strong>, [作者3]^ <strong>(<sup>#</sup>Equally Contributed)</strong></p>
 
     <p>[会议全称] ([简称]), [城市], [国家], [年份]</p>
 
@@ -66,12 +67,11 @@ My research interests focus on
 
 ## Journal Articles
 
-<!-- TODO: 期刊论文如果不需要配图，直接用下面这种列表写法，更省事。 -->
+不需要配图的期刊论文，用列表写法更省事：
+
 - **[Journal'26]** [作者列表]. [论文标题](https://example.com). [期刊名], [年份].
 
 # Collaborative Publications
-
-<!-- TODO: 合作论文（你不是主要贡献者的）。不需要配图，用列表写法即可。 -->
 
 ## Conference Papers
 
@@ -81,32 +81,9 @@ My research interests focus on
 
 - **[Journal'26]** [作者列表]. [论文标题](https://example.com). [期刊名], [年份].
 
-# Oral Presentations
-
-<!-- TODO: 口头报告的会议和题目。 -->
-- *2026.07*, [会议简称]'26 "[报告标题]"
-
-# Projects
-
-*I like to write some random codes in my spare time, check them out here*
-
-<!-- TODO: 你的开源项目，格式：[项目名](GitHub 链接) -->
-- [项目名称](https://github.com/codsod/xxx)
-
-# Internships
-
-<!-- TODO: 不需要实习经历这一段的话，把标题和下面这行一起删掉。 -->
-I'm actively searching for internships in [方向]. Please reach out to me if interested!
+     论文区结束
+========================================================== -->
 
 # Services
 
-<!-- TODO: 审稿、助教、志愿者等。不需要就整段删掉。 -->
-- TA of [课程名]
-
-<span class="anchor" id="cv"></span>
-
-# Curriculum Vitae
-
-<!-- TODO: 把简历 PDF 放进 docs/ 目录，然后改下面的文件名。 -->
-- [中文 CV](/docs/cv_zh.pdf)
-- [English CV](/docs/cv_en.pdf)
+- TA of AI-based Digital System Design (2026 Spring)

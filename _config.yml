@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "YOUR NAME (你的名字)"          # TODO: 浏览器标签页和搜索结果里显示的标题
-description              : "一句话介绍自己，比如 Ph.D. student at XXX"   # TODO
+title                    : "Kun Zhang"
+description              : "Incoming Ph.D. student at School of Integrated Circuits, Peking University"
 repository               : "codsod/codsod.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,14 +21,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "YOUR NAME (你的名字)"     # TODO: 侧边栏显示的名字
-  avatar           :                          # TODO: 照片放进 images/ 后填路径，如 "images/avatar.jpg"
-  bio              : "Ph.D. Student"          # TODO: 名字下方的头衔
-  location         : "Beijing, China"         # TODO
+  name             : "Kun Zhang"
+  avatar           : "images/avatar.jpg"
+  bio              : "Incoming Ph.D. Student"
+  location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    :                          # TODO: 你的 Google Scholar 主页链接
-  email            :                          # TODO: 你的邮箱
+  googlescholar    :
+  email            : "kzhang@stu.pku.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :                          # TODO: LinkedIn 主页 URL 的最后一段，没有就留空
+  linkedin         :
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :

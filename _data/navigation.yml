@@ -11,18 +11,3 @@ main:
 
   - title: "News"
     url: "/#news"
-
-  - title: "Main Publications"
-    url: "/#main-publications"
-
-  - title: "Collaborative Publications"
-    url: "/#collaborative-publications"
-
-  - title: "Oral Presentations"
-    url: "/#oral-presentations"
-
-  - title: "Projects"
-    url: "/#projects"
-
-  - title: "CV"
-    url: "/#cv"
