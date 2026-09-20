@@ -1,0 +1,28 @@
+# main links links
+main:
+  - title: "About Me"
+    url: "/#about-me"
+
+  - title: "Educations"
+    url: "/#educations"
+
+  - title: "Honors and Awards"
+    url: "/#honors-and-awards"
+
+  - title: "News"
+    url: "/#news"
+
+  - title: "Main Publications"
+    url: "/#main-publications"
+
+  - title: "Collaborative Publications"
+    url: "/#collaborative-publications"
+
+  - title: "Oral Presentations"
+    url: "/#oral-presentations"
+
+  - title: "Projects"
+    url: "/#projects"
+
+  - title: "CV"
+    url: "/#cv"

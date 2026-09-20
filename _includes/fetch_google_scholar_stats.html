@@ -1,0 +1,47 @@
+<script>
+    $(document).ready(function () {
+        {% if site.google_scholar_stats_use_cdn %}
+        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
+        {% else %}
+        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
+        {% endif %}
+        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+            var totalCitation = data['citedby'];
+            var totalCitationEle = document.getElementById('total_cit');
+            var hIndexEle = document.getElementById('scholar_h_index');
+            var i10IndexEle = document.getElementById('scholar_i10_index');
+            var updatedEle = document.getElementById('scholar_updated');
+            var statusEle = document.getElementById('scholar_stats_status');
+
+            if (totalCitationEle) {
+                totalCitationEle.innerHTML = totalCitation == null ? '--' : totalCitation;
+            }
+            if (hIndexEle) {
+                hIndexEle.innerHTML = data['hindex'] == null ? '--' : data['hindex'];
+            }
+            if (i10IndexEle) {
+                i10IndexEle.innerHTML = data['i10index'] == null ? '--' : data['i10index'];
+            }
+            if (updatedEle && data['updated']) {
+                updatedEle.innerHTML = 'Updated ' + new Date(data['updated']).toLocaleDateString();
+            }
+            if (statusEle) {
+                statusEle.innerHTML = 'Synced from Google Scholar';
+            }
+
+            var citationEles = document.getElementsByClassName('show_paper_citations');
+            Array.prototype.forEach.call(citationEles, element => {
+                var paperId = element.getAttribute('data');
+                var publication = data['publications'] && data['publications'][paperId];
+                if (publication) {
+                    element.innerHTML = '| Citations: ' + publication['num_citations'];
+                }
+            });
+        }).fail(function () {
+            var statusEle = document.getElementById('scholar_stats_status');
+            if (statusEle) {
+                statusEle.innerHTML = 'Google Scholar stats are temporarily unavailable';
+            }
+        });
+    })
+</script>
