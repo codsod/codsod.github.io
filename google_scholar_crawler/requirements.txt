@@ -1,2 +1,5 @@
 jsonpickle==1.4.2
 scholarly==1.5.1
+# scholarly 1.5.1 用的是 bibtexparser 1.x 的 bibtexparser.bibdatabase 模块，
+# 2.x 重组了该模块会导致 ImportError，所以必须钉在 1.x。
+bibtexparser==1.4.3
